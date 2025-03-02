@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(61, 60, 60, 0.813);
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    width: 80%;
+    max-width: 470px;
+    background-color: black;
+    color:rgb(14, 14, 13);
+    margin:100px auto 0;
+    text-align: center;
+    border-radius: 10px;
+    padding:5px;
+    background: linear-gradient(to right,rgb(213, 17, 50),rgb(169, 125, 125));
+}
+
+.board{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    gap:2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: rgba(11, 11, 11, 0.719);
+    color:white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding:10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    margin-top:40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    color:whitesmoke;
+    background-color: rgba(0, 0, 255, 0.623);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    animation: fadeIn 2s ease-in-out;
+    font-size: 50px;
+  }
+
+
+  @media screen and (max-width:536px){
+    .container{
+        background-color: green;
+    }
+  }
+  
