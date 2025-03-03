@@ -43,13 +43,14 @@ function handleCellClick(event){
     board[cellIndex] = currentPlayer;
 
     if(checkWinner()){
-        winner.innerHTML = '${currentPlayer} wins!';
+        winner.innerHTML = `${currentPlayer} wins!`;
         gameOver = true;
         return;
     }
 
     if(board.every(cell => cell !== '')){
         winner.innerHTML = `It\'s a draw!`;
+        gameOver = true;
     }
 
     currentPlayer = currentPlayer==='X' ? 'O':'X';

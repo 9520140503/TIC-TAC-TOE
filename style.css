@@ -23,6 +23,9 @@ body{
     background: linear-gradient(to right,rgb(213, 17, 50),rgb(169, 125, 125));
 }
 
+h2{
+  
+}
 .board{
     display: grid;
     margin-top: 20px;
